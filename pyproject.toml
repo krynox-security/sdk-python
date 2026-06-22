@@ -13,7 +13,7 @@ keywords = ["krynox", "captcha", "bot", "verification", "proof-of-work"]
 
 [project.urls]
 Homepage = "https://krynox.id"
-Repository = "https://gitlab.com/krynox/captcha/sdk-python"
+Repository = "https://github.com/krynox-security/sdk-python"
 
 [tool.hatch.build.targets.wheel]
 packages = ["krynox_captcha"]

@@ -19,7 +19,7 @@ from typing import Optional
 
 __all__ = ["KrynoxCaptcha", "KrynoxResult", "KrynoxFeedback", "verify"]
 
-DEFAULT_ENDPOINT = "https://captcha.krynox.id/siteverify"
+DEFAULT_ENDPOINT = "https://api.krynox.id/siteverify"
 
 
 @dataclass
