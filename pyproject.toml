@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "krynox-captcha"
-version = "0.1.0"
+version = "0.2.0"
 description = "Official Python server-side verification SDK for Krynox Captcha."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -12,7 +12,7 @@ license = { text = "MIT" }
 keywords = ["krynox", "captcha", "bot", "verification", "proof-of-work"]
 
 [project.urls]
-Homepage = "https://krynox.id"
+Homepage = "https://krynox.net"
 Repository = "https://github.com/krynox-security/sdk-python"
 
 [tool.hatch.build.targets.wheel]
