@@ -58,6 +58,8 @@ class KrynoxResult:
     risk: Optional[str] = None  # "low" | "medium" | "high"
     hostname: Optional[str] = None
     challenge_ts: Optional[str] = None
+    action: Optional[str] = None
+    cdata: Optional[str] = None
     error_codes: list[str] = field(default_factory=list)
     reasons: list[str] = field(default_factory=list)  # stable reason codes explaining the score
     agent: Optional[KrynoxAgent] = None
@@ -74,7 +76,7 @@ class KrynoxFeedback:
 class KrynoxClassification:
     ok: bool
     score: Optional[float] = None
-    classification: Optional[str] = None  # "GOOD" | "SUSPECT" | "BAD"
+    classification: Optional[str] = None  # "GOOD" | "NEUTRAL" | "BAD"
     reasons: list[str] = field(default_factory=list)
     blocked: bool = False
     error_codes: list[str] = field(default_factory=list)
@@ -161,6 +163,8 @@ class KrynoxCaptcha:
             risk=data.get("risk"),
             hostname=data.get("hostname"),
             challenge_ts=data.get("challenge_ts"),
+            action=data.get("action"),
+            cdata=data.get("cdata"),
             error_codes=list(data.get("error-codes", []) or []),
             reasons=list(data.get("reasons", []) or []),
             agent=KrynoxAgent(

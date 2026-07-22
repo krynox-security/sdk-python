@@ -71,7 +71,7 @@ krynox.feedback("bot", ip=suspicious_ip)
 - `verify(secret, response, *, endpoint=..., timeout=5.0)` — shorthand
 - `ErrorCode` — constants for `error_codes` (e.g. `ErrorCode.RATE_LIMITED`)
 
-`KrynoxResult`: `success, score, risk, hostname, challenge_ts, error_codes, reasons, agent, human`.
+`KrynoxResult`: `success, score, risk, hostname, challenge_ts, action, cdata, error_codes, reasons, agent, human`.
 `KrynoxClassification`: `ok, score, classification, reasons, blocked, error_codes`.
 `KrynoxFeedback`: `ok, corrected`.
 
